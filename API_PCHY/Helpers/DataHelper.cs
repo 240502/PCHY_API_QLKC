@@ -7,7 +7,7 @@ namespace APIPCHY.Helpers
 {
     public class DataHelper
     {
-        //string connectionString = "User Id=QLKC;Password=qlkc;Data Source=117.0.33.2:1522/QLKC";
+        string connectionString = "User Id=QLKC;Password=qlkc;Data Source=117.0.33.2:1522/QLKC";
         OracleConnection cn;
 
         public DataHelper(string conn)
@@ -18,17 +18,23 @@ namespace APIPCHY.Helpers
 
         public DataHelper()
         {
-            cn = new ConnectionOracle().getConnection();
+            cn = new OracleConnection(connectionString);
         }
 
         public bool Open()
         {
             try
             {
+                if (cn == null)
+                {
+                    cn = new OracleConnection(connectionString);
+                }
+
                 if (cn.State != ConnectionState.Open)
                 {
                     cn.Open();
                 }
+
                 return true;
             }
             catch (Exception ex)
@@ -37,6 +43,7 @@ namespace APIPCHY.Helpers
                 return false;
             }
         }
+
         public void Close()
         {
             if (cn.State != ConnectionState.Closed)
@@ -52,7 +59,7 @@ namespace APIPCHY.Helpers
             OracleCommand cmd = new OracleCommand { CommandText = procedureName, CommandType = CommandType.StoredProcedure, Connection = cn };
 
             OracleTransaction transaction;
-            Open();
+            var isOpen = Open();
             string strErr = "";
             transaction = cn.BeginTransaction();
             cmd.Transaction = transaction;
@@ -123,11 +130,12 @@ namespace APIPCHY.Helpers
                 ad.Fill(tb);
                 ad.Dispose();
                 cmd.Dispose();
-                cn.Dispose();
+                //cn.Dispose();
             }
             catch (Exception ex)
             {
                 tb = null;
+                throw ex;
                 // Log lỗi nếu cần
             }
             finally
