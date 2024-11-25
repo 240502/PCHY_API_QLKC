@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Th\u1EF1c t\u1EADp 2024\\PCHY\\BE-PCHY-2024\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\be-pchy-2024\\api_pchy\\models\\quan_tri\\ht_quyen_nguoidung\\ht_quyen_nguoidung_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\quan_tri\\ht_quyen_nguoidung\\ht_quyen_nguoidung_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\be-pchy-2024\\api_pchy\\models\\quan_tri\\ht_quyen_nguoidung\\ht_quyen_nguoidung_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\quan_tri\\ht_quyen_nguoidung\\ht_quyen_nguoidung_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\be-pchy-2024\\api_pchy\\models\\quan_tri\\ht_nguoidung\\ht_nguoidung_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\quan_tri\\ht_nguoidung\\ht_nguoidung_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\be-pchy-2024\\api_pchy\\models\\quan_tri\\ht_nguoidung\\authenticatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\quan_tri\\ht_nguoidung\\authenticatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,19 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HT_NGUOIDUNG_Manager.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAgwC8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T01:02:08.669Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthenticateModel.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\AuthenticateModel.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\AuthenticateModel.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\AuthenticateModel.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\AuthenticateModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T01:02:07.251Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HT_QUYEN_NGUOIDUNG_Model.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Model.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Model.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Model.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:55:07.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HT_QUYEN_NGUOIDUNG_Manager.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Manager.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Manager.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\BE-PCHY-2024\\API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Manager.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QUAN_TRI\\HT_QUYEN_NGUOIDUNG\\HT_QUYEN_NGUOIDUNG_Manager.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB0AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:54:58.05Z",
+              "EditorCaption": ""
             }
           ]
         }
