@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
 using API_PCHY.Models.QUAN_TRI.QLKC_C4_GIAONHAN_KIM;
-
+using Newtonsoft.Json.Linq;
 namespace API_PCHY.Controllers.QUAN_TRI.QLKC_C4_GIAONHAN_KIM
 {
     [Route("API_PCHY/[controller]")]
@@ -48,7 +48,118 @@ namespace API_PCHY.Controllers.QUAN_TRI.QLKC_C4_GIAONHAN_KIM
             return result != null ? Ok(result) : NotFound();
         }
 
+        [Route("get_PM_QLKC_C4_GIAONHAN_KIM")]
+        [HttpGet]
+        public IActionResult get_PM_QLKC_C4_GIAONHAN_KIM(int ID)
+        {
+            QLKC_C4_GIAONHAN_KIM_Model result = db.get_PM_QLKC_C4_GIAONHAN_KIM(ID.ToString());
+            return result != null ? Ok(result) : NotFound();
+        }
 
 
+        [Route("update_kyC1_PM_QLKC_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_kyC1_PM_QLKC_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_kyC1_PM_QLKC_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            return string.IsNullOrEmpty(result) ? Ok() : BadRequest(result);
+        }
+
+        [Route("update_kyC1_PQT_QLKC_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_kyC1_PQT_QLKC_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_kyC1_PQT_QLKC_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            return string.IsNullOrEmpty(result) ? Ok() : BadRequest(result);
+        }
+
+
+
+        [Route("update_kyC2_PQT_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_kyC2_PQT_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_kyC2_PQT_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            if (string.IsNullOrEmpty(result))
+            {
+                return Ok(new { message = "Update successful" });
+            }
+            else
+            {
+                return BadRequest(new { error = result });
+            }
+        }
+
+
+        [Route("update_kyC2_PM_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_kyC2_PM_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_kyC2_PM_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            if (string.IsNullOrEmpty(result))
+            {
+                return Ok(new { message = "Update successful" });
+            }
+            else
+            {
+                return BadRequest(new { error = result });
+            }
+        }
+
+
+
+        [Route("update_TL_PM_QLKC_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_TL_PM_QLKC_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_TL_PM_QLKC_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            if (string.IsNullOrEmpty(result))
+            {
+                return Ok(new { message = "Update successful" });
+            }
+            else
+            {
+                return BadRequest(new { error = result });
+            }
+        }
+
+
+        [Route("update_TL_PQT_QLKC_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_TL_PQT_QLKC_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_TL_PQT_QLKC_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            if (string.IsNullOrEmpty(result))
+            {
+                return Ok(new { message = "Update successful" });
+            }
+            else
+            {
+                return BadRequest(new { error = result });
+            }
+        }
+
+
+        [Route("update_huyPM_QLKC_C4_GIAONHAN_KIM")]
+        [HttpPut]
+        public IActionResult update_huyPM_QLKC_C4_GIAONHAN_KIM([FromBody] QLKC_C4_GIAONHAN_KIM_Model qLKC_C4_GIAONHAN_KIM)
+        {
+            string result = db.update_huyPM_QLKC_C4_GIAONHAN_KIM(qLKC_C4_GIAONHAN_KIM);
+
+            if (string.IsNullOrEmpty(result))
+            {
+                return Ok(new { message = "Update successful" });
+            }
+            else
+            {
+                return BadRequest(new { error = result });
+            }
+        }
     }
 }

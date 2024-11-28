@@ -1,7 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Th\u1EF1c t\u1EADp 2024\\PCHY\\BE-PCHY-2024\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\controllers\\qlkc\\qlkc_c4_giaonhan_kimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\controllers\\qlkc\\qlkc_c4_giaonhan_kimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\models\\qlkc\\qlkc_c4_giaonhan_kim\\qlkc_c4_giaonhan_kimmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\qlkc\\qlkc_c4_giaonhan_kim\\qlkc_c4_giaonhan_kimmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\models\\qlkc\\qlkc_kho_chi_tem\\qlkc_kho_chi_tem_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\qlkc\\qlkc_kho_chi_tem\\qlkc_kho_chi_tem_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\controllers\\qlkc\\qlkc_kho_chi_temcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\controllers\\qlkc\\qlkc_kho_chi_temcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\controllers\\quan_tri\\ht_nguoidung\\ht_nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\controllers\\quan_tri\\ht_nguoidung\\ht_nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\models\\qlkc\\bban_bangiao_kim\\bban_bangiao_kimmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\qlkc\\bban_bangiao_kim\\bban_bangiao_kimmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\models\\qlkc\\qlkc_c4_giaonhan_kim\\qlkc_c4_giaonhan_kimmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\qlkc\\qlkc_c4_giaonhan_kim\\qlkc_c4_giaonhan_kimmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\controllers\\qlkc\\bban_bangiao_kimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\controllers\\qlkc\\bban_bangiao_kimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|d:\\th\u1EF1c t\u1EADp\\pchy_api_qlkc\\api_pchy\\models\\quan_tri\\ht_nguoidung\\ht_nguoidung_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E3F8C64-6AE6-4BCD-B246-FE1AD18AC6E4}|API_PCHY\\API_PCHY.csproj|solutionrelative:api_pchy\\models\\quan_tri\\ht_nguoidung\\ht_nguoidung_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,19 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QLKC_C4_GIAONHAN_KIMController.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QLKC\\QLKC_C4_GIAONHAN_KIMController.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Controllers\\QLKC\\QLKC_C4_GIAONHAN_KIMController.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QLKC\\QLKC_C4_GIAONHAN_KIMController.cs",
+              "RelativeToolTip": "API_PCHY\\Controllers\\QLKC\\QLKC_C4_GIAONHAN_KIMController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:17:42.886Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QLKC_C4_GIAONHAN_KIMManager.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMManager.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMManager.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMManager.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMManager.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAiwAcBAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:16:16.813Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QLKC_KHO_CHI_TEMController.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QLKC\\QLKC_KHO_CHI_TEMController.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Controllers\\QLKC\\QLKC_KHO_CHI_TEMController.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QLKC\\QLKC_KHO_CHI_TEMController.cs",
+              "RelativeToolTip": "API_PCHY\\Controllers\\QLKC\\QLKC_KHO_CHI_TEMController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:17:02.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QLKC_KHO_CHI_TEM_Manager.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\QLKC_KHO_CHI_TEM\\QLKC_KHO_CHI_TEM_Manager.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QLKC\\QLKC_KHO_CHI_TEM\\QLKC_KHO_CHI_TEM_Manager.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\QLKC_KHO_CHI_TEM\\QLKC_KHO_CHI_TEM_Manager.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QLKC\\QLKC_KHO_CHI_TEM\\QLKC_KHO_CHI_TEM_Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T07:08:54.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HT_NGUOIDUNGController.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNGController.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Controllers\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNGController.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNGController.cs",
+              "RelativeToolTip": "API_PCHY\\Controllers\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNGController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:54:33.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BBAN_BANGIAO_KIMManager.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\BBAN_BANGIAO_KIM\\BBAN_BANGIAO_KIMManager.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QLKC\\BBAN_BANGIAO_KIM\\BBAN_BANGIAO_KIMManager.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\BBAN_BANGIAO_KIM\\BBAN_BANGIAO_KIMManager.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QLKC\\BBAN_BANGIAO_KIM\\BBAN_BANGIAO_KIMManager.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAwwJsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T07:33:23.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QLKC_C4_GIAONHAN_KIMModel.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMModel.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMModel.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMModel.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QLKC\\QLKC_C4_GIAONHAN_KIM\\QLKC_C4_GIAONHAN_KIMModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:36:56.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BBAN_BANGIAO_KIMController.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QLKC\\BBAN_BANGIAO_KIMController.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Controllers\\QLKC\\BBAN_BANGIAO_KIMController.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Controllers\\QLKC\\BBAN_BANGIAO_KIMController.cs",
+              "RelativeToolTip": "API_PCHY\\Controllers\\QLKC\\BBAN_BANGIAO_KIMController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:17:42.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HT_NGUOIDUNG_Manager.cs",
+              "DocumentMoniker": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "RelativeDocumentMoniker": "API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "ToolTip": "D:\\Th\u1EF1c t\u1EADp\\PCHY_API_QLKC\\API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "RelativeToolTip": "API_PCHY\\Models\\QUAN_TRI\\HT_NGUOIDUNG\\HT_NGUOIDUNG_Manager.cs",
+              "ViewState": "AQIAAL4CAAAAAAAAAAAiwM4CAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:49:37.488Z"
             }
           ]
         }
