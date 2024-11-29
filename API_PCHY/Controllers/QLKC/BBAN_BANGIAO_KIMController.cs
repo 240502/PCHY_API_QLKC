@@ -10,7 +10,7 @@ using System.Web.Http.Routing;
 
 namespace API_PCHY.Controllers.QLKC
 {
-    [Route("api/[controller]")]
+    [Route("APIPCHY/[controller]")]
     [ApiController]
     public class BBAN_BANGIAO_KIMController : ControllerBase
     {
@@ -21,11 +21,13 @@ namespace API_PCHY.Controllers.QLKC
         public IActionResult search_BBAN_BANGIAO_KIM([FromBody] Dictionary<string, object> formData)
         {
             try
-            {
+                {
                 int? pageIndex = 0;
                 int? pageSize = 0;
                 string don_vi_nhan = null;
                 string don_vi_giao = null;
+                string don_vi = null;
+
                 int? trang_thai = null;
                 if (formData.Keys.Contains("pageIndex") && !string.IsNullOrEmpty(formData["pageIndex"].ToString()))
                 {
@@ -43,13 +45,17 @@ namespace API_PCHY.Controllers.QLKC
                 {
                     don_vi_giao = formData["don_vi_giao"].ToString();
                 }
+                if (formData.Keys.Contains("don_vi") && !string.IsNullOrEmpty(formData["don_vi"].ToString()))
+                {
+                    don_vi = formData["don_vi"].ToString();
+                }
                 if (formData.Keys.Contains("trang_thai") && !string.IsNullOrEmpty(formData["trang_thai"].ToString()))
                 {
                     trang_thai = int.Parse(formData["trang_thai"].ToString());
                 }
 
                 int totalItems = 0;
-                List<BBAN_BANGIAO_KIMModel> result = manager.search_BBAN_BANGIAO_KIM(pageIndex, pageSize, don_vi_giao, don_vi_nhan, trang_thai, out totalItems);
+                List<BBAN_BANGIAO_KIMModel> result = manager.search_BBAN_BANGIAO_KIM(pageIndex, pageSize, don_vi_giao, don_vi_nhan, trang_thai, don_vi, out totalItems);
                 return result != null ? Ok(new
                 {
                     page = pageIndex,
