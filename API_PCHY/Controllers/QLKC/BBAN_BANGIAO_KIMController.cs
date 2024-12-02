@@ -1,16 +1,12 @@
 ﻿using API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM;
-using APIPCHY_PhanQuyen.Models.QLKC.DM_PHONGBAN;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Org.BouncyCastle.Asn1.Tsp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web.Http.Routing;
 
 namespace API_PCHY.Controllers.QLKC
 {
-    [Route("api/[controller]")]
+    [Route("APIPCHY/[controller]")]
     [ApiController]
     public class BBAN_BANGIAO_KIMController : ControllerBase
     {
@@ -21,11 +17,14 @@ namespace API_PCHY.Controllers.QLKC
         public IActionResult search_BBAN_BANGIAO_KIM([FromBody] Dictionary<string, object> formData)
         {
             try
-            {
+                {
                 int? pageIndex = 0;
                 int? pageSize = 0;
                 string don_vi_nhan = null;
                 string don_vi_giao = null;
+                string don_vi = null;
+                int? loai_bban = null;
+
                 int? trang_thai = null;
                 if (formData.Keys.Contains("pageIndex") && !string.IsNullOrEmpty(formData["pageIndex"].ToString()))
                 {
@@ -35,6 +34,10 @@ namespace API_PCHY.Controllers.QLKC
                 {
                     pageSize = int.Parse(formData["pageSize"].ToString());
                 }
+                if (formData.Keys.Contains("loai_bban") && !string.IsNullOrEmpty(formData["loai_bban"].ToString()))
+                {
+                    loai_bban = int.Parse(formData["loai_bban"].ToString());
+                }
                 if (formData.Keys.Contains("don_vi_nhan") && !string.IsNullOrEmpty(formData["don_vi_nhan"].ToString()))
                 {
                     don_vi_nhan = formData["don_vi_nhan"].ToString();
@@ -43,13 +46,17 @@ namespace API_PCHY.Controllers.QLKC
                 {
                     don_vi_giao = formData["don_vi_giao"].ToString();
                 }
+                if (formData.Keys.Contains("don_vi") && !string.IsNullOrEmpty(formData["don_vi"].ToString()))
+                {
+                    don_vi = formData["don_vi"].ToString();
+                }
                 if (formData.Keys.Contains("trang_thai") && !string.IsNullOrEmpty(formData["trang_thai"].ToString()))
                 {
                     trang_thai = int.Parse(formData["trang_thai"].ToString());
                 }
 
                 int totalItems = 0;
-                List<BBAN_BANGIAO_KIMModel> result = manager.search_BBAN_BANGIAO_KIM(pageIndex, pageSize, don_vi_giao, don_vi_nhan, trang_thai, out totalItems);
+                List<BBAN_BANGIAO_KIMModel> result = manager.search_BBAN_BANGIAO_KIM(pageIndex, pageSize, don_vi_giao, don_vi_nhan, trang_thai, don_vi, loai_bban, out totalItems);
                 return result != null ? Ok(new
                 {
                     page = pageIndex,
@@ -58,7 +65,8 @@ namespace API_PCHY.Controllers.QLKC
                     data = result,
                     don_vi_nhan = don_vi_nhan,
                     don_vi_giao = don_vi_giao,
-                    trang_thai = trang_thai
+                    trang_thai = trang_thai,
+                    loai_bban= loai_bban
                 }) : NotFound();
               
               
@@ -166,6 +174,20 @@ namespace API_PCHY.Controllers.QLKC
             {
                     string strrError = manager.update_QLKC_BBAN_BANGIAO_KIMKyC2(id_bban);
                     return String.IsNullOrEmpty(strrError) ? Ok("Ký thành công") : BadRequest(strrError);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [Route("cancel_QLKC_BBAN_BANGIAO_KIM")]
+        [HttpPut]
+        public IActionResult cancel_QLKC_BBAN_BANGIAO_KIM(int id_bban)
+        {
+            try
+            {
+                string result = manager.cancel_QLKC_BBAN_BANGIAO_KIM(id_bban);
+                return String.IsNullOrEmpty(result) ? Ok("Hủy thành công") : BadRequest(result);
             }
             catch (Exception ex)
             {
