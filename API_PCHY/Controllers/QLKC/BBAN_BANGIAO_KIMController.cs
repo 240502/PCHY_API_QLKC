@@ -1,12 +1,8 @@
 ﻿using API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM;
-using APIPCHY_PhanQuyen.Models.QLKC.DM_PHONGBAN;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Org.BouncyCastle.Asn1.Tsp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web.Http.Routing;
 
 namespace API_PCHY.Controllers.QLKC
 {
