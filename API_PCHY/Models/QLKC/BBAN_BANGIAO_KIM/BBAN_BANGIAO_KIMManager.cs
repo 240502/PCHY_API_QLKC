@@ -11,12 +11,12 @@ namespace API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM
     {
         DataHelper helper = new DataHelper();
 
-        public List<BBAN_BANGIAO_KIMModel> search_BBAN_BANGIAO_KIM(int? pageIndex,int? pageSize, string? don_vi_giao, string? don_vi_nhan, int? trang_thai, string don_vi,out int totalItems)
+        public List<BBAN_BANGIAO_KIMModel> search_BBAN_BANGIAO_KIM(int? pageIndex,int? pageSize, string? don_vi_giao, string? don_vi_nhan, int? trang_thai, string don_vi,int? loai_bban,out int totalItems)
         {
             totalItems = 0;
             try
             {
-                DataTable tb = helper.ExcuteReader("PKG_QLKC_SANG.search_BBAN_BANGIAO_KIM", "p_page_index","p_page_size", "p_DON_VI_GIAO", "p_DON_VI_NHAN", "p_TRANG_THAI","p_DON_VI", pageIndex,pageSize,don_vi_giao,don_vi_nhan,trang_thai,don_vi);
+                DataTable tb = helper.ExcuteReader("PKG_QLKC_SANG.search_BBAN_BANGIAO_KIM", "p_page_index","p_page_size", "p_DON_VI_GIAO", "p_DON_VI_NHAN", "p_TRANG_THAI","p_DON_VI", "p_LOAI_BBAN",pageIndex,pageSize,don_vi_giao,don_vi_nhan,trang_thai,don_vi,loai_bban);
 
                 if (tb != null)
                 {
@@ -85,10 +85,10 @@ namespace API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM
             try
             {
                 string result = helper.ExcuteNonQuery("PKG_QLKC_SANG.insert_QLKC_BBAN_BANGIAO_KIM", "p_Error",
-                                                        "p_ID_KIM", "p_SO_LUONG", "p_DON_VI_GIAO", "p_DON_VI_NHAN", "p_NGUOI_NHAN", "p_NGUOI_GIAO", "p_NOI_DUNG",
+                                                        "p_ID_KIM", "p_SO_LUONG", "p_DON_VI_GIAO", "p_DON_VI_NHAN", "p_NGUOI_NHAN", "p_NGUOI_GIAO", "p_NOI_DUNG", "p_LOAI_BBAN",
                                                         bBAN_BANGIAO_KIMModel.ID_KIM, bBAN_BANGIAO_KIMModel.SO_LUONG, bBAN_BANGIAO_KIMModel.DON_VI_GIAO,
                                                         bBAN_BANGIAO_KIMModel.DON_VI_NHAN,bBAN_BANGIAO_KIMModel.NGUOI_NHAN, 
-                                                        bBAN_BANGIAO_KIMModel.NGUOI_GIAO, bBAN_BANGIAO_KIMModel.NOI_DUNG);
+                                                        bBAN_BANGIAO_KIMModel.NGUOI_GIAO, bBAN_BANGIAO_KIMModel.NOI_DUNG,bBAN_BANGIAO_KIMModel.LOAI_BBAN);
                 return result;
             }
             catch (Exception ex)
@@ -173,6 +173,20 @@ namespace API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM
                     return "Vui lòng ký cấp 1 trước";
                 }
                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public string cancel_QLKC_BBAN_BANGIAO_KIM(int id_bban)
+        {
+            try
+            {
+                string result = helper.ExcuteNonQuery("PKG_QLKC_SANG.cancel_QLKC_BBAN_BANGIAO_KIM", "p_Error",
+                                                        "p_ID_BIENBAN",
+                                                        id_bban);
+                return result;
             }
             catch (Exception ex)
             {

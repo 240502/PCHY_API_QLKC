@@ -27,6 +27,7 @@ namespace API_PCHY.Controllers.QLKC
                 string don_vi_nhan = null;
                 string don_vi_giao = null;
                 string don_vi = null;
+                int? loai_bban = null;
 
                 int? trang_thai = null;
                 if (formData.Keys.Contains("pageIndex") && !string.IsNullOrEmpty(formData["pageIndex"].ToString()))
@@ -36,6 +37,10 @@ namespace API_PCHY.Controllers.QLKC
                 if (formData.Keys.Contains("pageSize") && !string.IsNullOrEmpty(formData["pageSize"].ToString()))
                 {
                     pageSize = int.Parse(formData["pageSize"].ToString());
+                }
+                if (formData.Keys.Contains("loai_bban") && !string.IsNullOrEmpty(formData["loai_bban"].ToString()))
+                {
+                    loai_bban = int.Parse(formData["loai_bban"].ToString());
                 }
                 if (formData.Keys.Contains("don_vi_nhan") && !string.IsNullOrEmpty(formData["don_vi_nhan"].ToString()))
                 {
@@ -55,7 +60,7 @@ namespace API_PCHY.Controllers.QLKC
                 }
 
                 int totalItems = 0;
-                List<BBAN_BANGIAO_KIMModel> result = manager.search_BBAN_BANGIAO_KIM(pageIndex, pageSize, don_vi_giao, don_vi_nhan, trang_thai, don_vi, out totalItems);
+                List<BBAN_BANGIAO_KIMModel> result = manager.search_BBAN_BANGIAO_KIM(pageIndex, pageSize, don_vi_giao, don_vi_nhan, trang_thai, don_vi, loai_bban, out totalItems);
                 return result != null ? Ok(new
                 {
                     page = pageIndex,
@@ -64,7 +69,8 @@ namespace API_PCHY.Controllers.QLKC
                     data = result,
                     don_vi_nhan = don_vi_nhan,
                     don_vi_giao = don_vi_giao,
-                    trang_thai = trang_thai
+                    trang_thai = trang_thai,
+                    loai_bban= loai_bban
                 }) : NotFound();
               
               
@@ -172,6 +178,20 @@ namespace API_PCHY.Controllers.QLKC
             {
                     string strrError = manager.update_QLKC_BBAN_BANGIAO_KIMKyC2(id_bban);
                     return String.IsNullOrEmpty(strrError) ? Ok("Ký thành công") : BadRequest(strrError);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [Route("cancel_QLKC_BBAN_BANGIAO_KIM")]
+        [HttpPut]
+        public IActionResult cancel_QLKC_BBAN_BANGIAO_KIM(int id_bban)
+        {
+            try
+            {
+                string result = manager.cancel_QLKC_BBAN_BANGIAO_KIM(id_bban);
+                return String.IsNullOrEmpty(result) ? Ok("Hủy thành công") : BadRequest(result);
             }
             catch (Exception ex)
             {
