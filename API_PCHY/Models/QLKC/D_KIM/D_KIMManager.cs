@@ -85,7 +85,7 @@ namespace API_PCHY.Models.QLKC.D_KIM
                 for (int i = 0; i < ds.Rows.Count; i++)
                 {
                     D_KIMModel d = new D_KIMModel();
-                    d.id_kim = int.Parse(ds.Rows[0]["ID_KIM"].ToString());
+                    d.id_kim = int.Parse(ds.Rows[i]["ID_KIM"].ToString());
                     d.loai_ma_kim = ds.Rows[i]["LOAI_MA_KIM"] != DBNull.Value ? int.Parse(ds.Rows[i]["LOAI_MA_KIM"].ToString()) : null;
                     d.thoi_han = ds.Rows[i]["THOI_HAN"] != DBNull.Value ? DateTime.Parse(ds.Rows[i]["THOI_HAN"].ToString()) : null;
                     d.trang_thai = ds.Rows[i]["TRANG_THAI"] != DBNull.Value ? int.Parse(ds.Rows[i]["TRANG_THAI"].ToString()) : null;

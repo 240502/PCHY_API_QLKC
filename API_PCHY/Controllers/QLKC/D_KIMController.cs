@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 namespace API_PCHY.Controllers.QLKC
 {
-    [Route("API_PCHY/[controller]")]
+    [Route("APIPCHY/[controller]")]
     [ApiController]
     public class D_KIMController : ControllerBase
     {
