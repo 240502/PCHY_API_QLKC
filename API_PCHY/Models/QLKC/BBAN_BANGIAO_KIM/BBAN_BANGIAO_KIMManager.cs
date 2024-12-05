@@ -139,7 +139,7 @@ namespace API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM
             }
             catch (Exception ex)
             {
-                throw ex;
+               throw ex;
             }
         }
         public string update_QLKC_BBAN_BANGIAO_KIMTraLai(int id_bban)
