@@ -10,6 +10,7 @@ namespace API_PCHY.Controllers.QLKC
     [ApiController]
     public class BBAN_BANGIAO_KIMController : ControllerBase
     {
+            
         BBAN_BANGIAO_KIMManager manager = new BBAN_BANGIAO_KIMManager();
 
         [Route("search_BBAN_BANGIAO_KIM")]
