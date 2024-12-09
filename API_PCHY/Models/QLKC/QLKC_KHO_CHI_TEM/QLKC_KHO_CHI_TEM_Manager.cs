@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System;
+using API_PCHY.Models.QLKC.BBAN_BANGIAO_KIM;
 
 
 namespace API_PCHY.Models.QUAN_TRI.QLKC_KHO_CHI_TEM
@@ -97,6 +98,42 @@ namespace API_PCHY.Models.QUAN_TRI.QLKC_KHO_CHI_TEM
                 {
                     return null;
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public List<QLKC_KHO_CHI_TEM_Model> search_QLKC_KHO_CHI_TEM(int? pageIndex, int? pageSize, string? LOAI, string? THANG, int? NAM, out int totalItems)
+        {
+            totalItems = 0;
+            try
+            {
+                DataTable ds = helper.ExcuteReader("PKG_QLKC_THUAN.search_QLKC_KHO_CHI_TEM", "p_page_index", "p_page_size", "p_LOAI", "p_THANG", "p_NAM", pageIndex, pageSize, LOAI, THANG, NAM);
+
+                if (ds != null)
+                {
+                    totalItems = int.Parse(ds.Rows[0]["RecordCount"].ToString());
+                    List<QLKC_KHO_CHI_TEM_Model> results = new List<QLKC_KHO_CHI_TEM_Model>();
+                    for (int i = 0; i < ds.Rows.Count; i++)
+                    {
+                        QLKC_KHO_CHI_TEM_Model model = new QLKC_KHO_CHI_TEM_Model();
+                        model.ID_KHO = ds.Rows[i]["ID_KHO"].ToString();
+                        model.LOAI = ds.Rows[i]["LOAI"] != DBNull.Value ? ds.Rows[i]["LOAI"].ToString() : null;
+                        model.SO_LUONG = ds.Rows[i]["SO_LUONG"] != DBNull.Value ? ds.Rows[i]["SO_LUONG"].ToString() : null;
+                        model.THANG = ds.Rows[i]["THANG"] != DBNull.Value ? ds.Rows[i]["THANG"].ToString() : null;
+                        model.NAM = ds.Rows[i]["NAM"] != DBNull.Value ? ds.Rows[i]["NAM"].ToString() : null;
+                        model.DON_VI_TINH = ds.Rows[i]["DON_VI_TINH"] != DBNull.Value ? ds.Rows[i]["DON_VI_TINH"].ToString() : null;
+
+                        results.Add(model);
+                    }
+
+
+                    return results;
+                }
+                else return null;
             }
             catch (Exception ex)
             {
